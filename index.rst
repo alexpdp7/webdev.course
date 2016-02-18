@@ -9,9 +9,10 @@ Welcome to webdev.course's documentation!
 Contents:
 
 .. toctree::
+   :numbered:
    :maxdepth: 2
 
-
+   basic_html
 
 Indices and tables
 ==================
