@@ -47,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'webdev.course'
-copyright = '2016, Álex Córcoles'
+copyright = '2016, Alex Corcoles'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -200,7 +200,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   ('index', 'webdevcourse.tex', 'webdev.course Documentation',
-   'Álex Córcoles', 'manual'),
+   'Alex Corcoles', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -230,7 +230,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'webdevcourse', 'webdev.course Documentation',
-     ['Álex Córcoles'], 1)
+     ['Alex Corcoles'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -244,7 +244,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'webdevcourse', 'webdev.course Documentation',
-   'Álex Córcoles', 'webdevcourse', 'One line description of project.',
+   'Alex Corcoles', 'webdevcourse', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -265,9 +265,9 @@ texinfo_documents = [
 
 # Bibliographic Dublin Core info.
 epub_title = 'webdev.course'
-epub_author = 'Álex Córcoles'
-epub_publisher = 'Álex Córcoles'
-epub_copyright = '2016, Álex Córcoles'
+epub_author = 'Alex Corcoles'
+epub_publisher = 'Alex Corcoles'
+epub_copyright = '2016, Alex Corcoles'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = 'webdev.course'
