@@ -13,6 +13,7 @@ Contents:
    :maxdepth: 2
 
    basic_html
+   html_and_css
 
 Indices and tables
 ==================
