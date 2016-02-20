@@ -93,3 +93,34 @@ HTTP 1.1 protocol. It says that the content at that URL is HTML in the UTF-8
 charset and is 229 bytes long.
 
 Then it follows it with the actual content.
+
+Forms
+-----
+
+HTTP and HTML combine to create the most simple mechanism for user interaction
+in web pages. With what we have seen until now, we can only publish a series of
+URLs with links between them and have the user jump from one to other, which
+is a very limited form of interaction.
+
+The next step to links is web forms. A form is constructed in an HTML page with
+the use of `form`, `input`, etc. tags. We can create text input boxes,
+dropdowns, checkboxes, etc. and those forms can be "submitted" (by clicking on
+a submit button, for instance). When a form is submitted, the browser makes an
+HTTP request like when you click on a link to request a new page, however the
+information contained in the form is sent in the HTTP request.
+
+The web server can then process the information in the form and do something
+with it. For instance, with the following HTML fragment::
+
+ <form action="http://foo.bar/process.form/">
+   <label> Type your name: <input name="name" type="text"/></label>
+   <input type="submit">Tell me your name</input>
+ </form>
+
+You will get a form with a text box so you can enter your name and a submit
+button to send the information to the http://foo.bar/process.form/ URL.
+
+There, the web server will receive the name you have typed in the form and it
+can do whatever it wants with it- it can store a list of all the people who
+have sent their names, reply to the request with an HTML document saying
+"greetings, {your name here}", etc.
