@@ -124,3 +124,41 @@ There, the web server will receive the name you have typed in the form and it
 can do whatever it wants with it- it can store a list of all the people who
 have sent their names, reply to the request with an HTML document saying
 "greetings, {your name here}", etc.
+
+AJAX and XMLHttpRequest
+-----------------------
+
+Forms are a very basic, but quite powerful means of interaction with web
+pages; many useful things can be built with using them. However, around the
+year 2000, web developers experimented with Javascript to create more
+sophisticated ways to interact with the user. This culminated in the creation
+and standardization of the `XMLHttpRequest` Javascript object, which allows
+Javascript code to make HTTP requests not tied to a link or a form.
+
+Using `XMLHttpRequest` we can do stuff such as:
+
+* When the user reaches the bottom of a page (containing, for instance, a list
+  of articles), request more articles and append them to the end, creating the
+  illusion of an infinite list of articles.
+* Link to content or submit forms without triggering a full-page refresh in the
+  browser for faster and seamless interaction.
+* Update information in the page live without reloading and losing context.
+
+and many other things. These techniques became known as `AJAX` (asynchronous
+Javascript and XML), although really neither `XMLHttpRequest` or `AJAX` usually
+involve XML nowadays.
+
+Single-page apps
+----------------
+
+The next iteration after AJAX was completely abandoning the traditional links
+and forms loading new pages in the browser and just load a single page in the
+browser and perform all further interactions with the user via Javascript and
+`XMLHttpRequest`, with no further reloads, thus providing in theory a smoother
+user experience and more sophisticated forms of interactions.
+
+The poster child of this movement was Google's GMail web interface which
+brought a new era of sophisticated web applications, free from the limitations
+of the previous generation and allowing a richer experience, equalling that
+of native, traditional desktop applications, while having the advantages of
+the web.
